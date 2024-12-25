@@ -2,7 +2,7 @@ In this guide, we’ll walk you through the steps to install Windows Server 2022
 
 >Download ISO:  https://info.microsoft.com/ww-landing-windows-server-2022.html
 
-![[vm-initializing 1.png]]
+![initial](img/vm-initializing%201.png)
 
 To ensure smooth performance, allocate at least 4GB of RAM and 2 CPU cores to the virtual machine during setup. This configuration will provide a stable environment for running Windows Server 2022.
 
