@@ -26,7 +26,7 @@ Once you click on "Add Roles and Features", a wizard window will pop up to guide
 
 To proceed, simply click the "Next" button at the bottom of the page.
 
-![](setup-page.png)
+![](img/setup-page.png)
 
 On the next page of the wizard, select "Role-based or feature-based installation" and then click "Next". This option allows you to install roles or features directly on a specific server, which is what we’ll be doing.
 
@@ -34,11 +34,11 @@ In this case, we’re going to install the Active Directory feature on a Windows
 
 >Note: Active Directory is a built-in Windows feature that enables centralized management of users, devices, and permissions across your network. 
 
-![](role-based-option.png)
+![](img/role-based-option.png)
 
 On the **"Select destination server"** page of the wizard, you’ll see the **server pool** listed. Simply choose your Windows Server from the list (it should be the only option in this case), and then click **"Next"** to proceed
 
-![](select-server-pool.png)
+![](img/select-server-pool.png)
 
 On the **"Select server roles"** page, this is where you can add all the roles and features you need for the server. In this setup, we’ll be adding the **Active Directory Domain Services (AD DS)** role and the **DNS Server** role. These two features work closely together to manage domain-based networks and provide name resolution services.
 
@@ -49,32 +49,32 @@ On the **"Select server roles"** page, this is where you can add all the roles a
 
 Once both features are selected, click **"Next"** to continue with the setup
 
-![](Add-Ad-feature.png)
+![](img/Add-Ad-feature.png)
 
 The tools which are require to run AD Service will be installed. click "Add features"
 
-![](ad-tool.png)
+![](img/ad-tool.png)
 
 
 Same for DNS installation, Click "Add features"
 
-![](dns-tool.png)
+![](img/dns-tool.png)
 
 Leave everything to default and click "Next"
 
 
-![](nothing-page-2.png)
+![](img/nothing-page-2.png)
 
-![](dns-nothing-page.png)
+![](img/dns-nothing-page.png)
 
 Lastly click "install" to install all the AD feature and required tools
 
-![](confim-install-ad.png)
+![](img/confim-install-ad.png)
 
 # Promoting to DC
 
 To promote the server to Domain Controller, click on the following.
-![](promoting-to-dc-initial.png)
+![](img/promoting-to-dc-initial.png)
 
 If you are working with an existing **Active Directory forest** and want to add this server as a **Domain Controller (DC)** to an existing domain, you can select the first option: **"Add a domain controller to an existing domain."**
 
@@ -83,31 +83,31 @@ After selecting this option, you will need to:
 1. Enter the name of the existing domain (e.g., `example.com`) in the provided field.
 2. Ensure you have proper credentials with administrative privileges for the domain so that the setup can proceed smoothly
 
-![](add-existing-forest.png)
+![](img/add-existing-forest.png)
 
 In this setup lets create a new forest named "*winlab.local*", shall we!. click "**Add new forest**"
 
-![](new-forest.png)
+![](img/new-forest.png)
 
 When configuring **Domain Controller (DC) Options**, you’ll notice an option to make the Domain Controller also act as a **DNS Server**
 
 >**Note:** In Active Directory, all Domain Controllers automatically function as **DNS Servers** for their domain
 
-![](forest-setup.png)
+![](img/forest-setup.png)
 
 In this step, you’ll need to set the **Directory Services Restore Mode (DSRM)** password. This password is essential because it allows you to access the server in **Recovery Mode**, which is used to troubleshoot or repair the Active Directory database if something goes wrong.
 
 >**Note:** Make sure to document this password securely, as it will be required in the event of a system recovery. Losing it can make restoring your server much more challenging.
 
-![](dsrn-pass.png)
+![](img/dsrn-pass.png)
 
 Click next for dns delegation.
 
-![](next.png)
+![](img/next.png)
 
 Server will automatically pick a NetBIOS name for us. Click next.
 
-![](netbios.png)
+![](img/netbios.png)
 
 In the next step, you’ll see options to specify the locations for important Active Directory files:
 
@@ -116,16 +116,16 @@ In the next step, you’ll see options to specify the locations for important Ac
 
 By default, these folders are stored in the system drive (usually `C:\`), but you can change the locations if needed
 
-![](ntds-sysvol-folders.png)
+![](img/ntds-sysvol-folders.png)
 
 Finally!. Click Install to setup and after the installation completed restart the server.
 
-![](final-install.png)
+![](img/final-install.png)
 
 After Rebooting we can see our workgroup have changed to "*winlab.local*". The **"winlab.local"** domain name is now associated with your Active Directory setup, and your server has become a **Domain Controller (DC)** for this domain. This change means your server can now manage authentication, user access, and other domain-related services across the network
 
-![](succ.png)
+![](img/succ.png)
 
 We can also see the DNS address is set to localhost.
 
-![](dns-local.png)
+![](img/dns-local.png)
