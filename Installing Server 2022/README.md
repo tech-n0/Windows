@@ -32,4 +32,6 @@ To enter login credentials. First press the following button, which is `Ctrl+Alt
 
 ![input.png](img/input.png)
 
+> NOTE: If you have MAC OS and want to test Active Directory. Check this blog on how you can achieve https://medium.com/@tech-n0/ad-lab-on-m1-for-oscp-915e42be74f3
+
 Congratulations! You have successfully installed Windows Server 2022 on VirtualBox. Your virtual machine is now ready for use, whether for testing, learning, or deploying server applications. 
