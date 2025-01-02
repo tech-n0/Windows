@@ -16,50 +16,50 @@ Demoting a Domain Controller (DC) involves transitioning it from a DC role to a 
         
     3. Uncheck **Active Directory Domain Services (AD DS)**.
 
-![](Remove-Role.png)
+![](img/Remove-Role.png)
 
 
-![](1st.png)
+![](img/1st.png)
 
 The wizard will detect that the server is a DC and will prompt to demote it.
-![](2nd.png)
+![](img/2nd.png)
 
 Uncheck the "Active Directory Domain Services" to remove the AD functionality from the Domain Controller.
 
-![](3rd.png)
+![](img/3rd.png)
 
 Click Remove Features.
 
-![](3.1.png)
+![](img/3.1.png)
 
 It is safe to ignore the error message and click the "Demote this Domain Controller".
 
-![](4th.png)
+![](img/4th.png)
 
 I only have one Domain Controller, so I'm selecting the second option "Last Domain". If you have two or more DC in a single domain then proceed with the first option.
 
-![](5th.png)
+![](img/5th.png)
 
 
-![](6th.png)
+![](img/6th.png)
 
 Check both the options as we dont need DNS Zone and partitions. Also make sure you have proper backups.
 
-![](7th.png)
+![](img/7th.png)
 
 Enter the Domain Admin credentials for the "soc.boy" domain password and click next.
-![](8th.png)
+![](img/8th.png)
 
 Click **Demote this domain controller**.
-![](9th.png)
+![](img/9th.png)
 #### **Restart the Server**
 
 Once demotion is complete, the server will restart. It will no longer function as a DC but as a regular member server. Now, Try login with the local Administrator account password.
 
-![](10th.png)
+![](img/10th.png)
 
 
-![](11th.png)
+![](img/11th.png)
 
 
 ### **Post-Demotion Steps**
