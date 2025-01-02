@@ -1,3 +1,4 @@
+# Promoting to Domain Controller
 
 Imagine a big company. It has lots of employees, computers, and devices. Managing who can access what, keeping track of passwords, and making sure everyone only sees what they need would be a big headache. That’s where Active Directory comes in.
 
