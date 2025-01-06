@@ -15,16 +15,17 @@ Before starting, ensure you have a server running Windows Server 2022 with the D
     - Review the **DHCP Server** role and click **Next**.
     - Click **Install** on the **Confirmation** page. Wait for the installation to complete.
     - Click **Close** once the installation is complete.
+
+
 ![](img/add-roles.png)
 
 ![](img/1st.png)
 
+![](img/dhcp.png)
 
-![](dhcp.png)
+![](img/board.png)
 
-![](board.png)
-
-![](promote.png)
+![](img/promote.png)
 
 ### Post-Installation Configuration
 
@@ -36,12 +37,12 @@ Before starting, ensure you have a server running Windows Server 2022 with the D
     - Click **Close** once the configuration is complete
 
 
-![](1.png)
+![](img/1.png)
 
-![](2.png)
+![](img/2.png)
 
 
-![](3.png)
+![](img/3.png)
 
 
 ### Configure DHCP Scopes
@@ -59,34 +60,35 @@ Before starting, ensure you have a server running Windows Server 2022 with the D
     - Choose **Yes, I want to activate this scope now** and click **Next**.
     - Click **Finish** to complete the wizard.
 
-![](4.png)
+![](img/4.png)
 
 
-![](5.png)
-
-
-
-![](6.png)
-![](7.png)
-
-
-![](8.png)
-
-
-![](9.png)
-
-![](10.png)
+![](img/5.png)
 
 
 
-![](11.png)
+![](img/6.png)
 
-![](12.png)
-
-
-![](13.png)
+![](img/7.png)
 
 
-![](14.png)
+![](img/8.png)
+
+
+![](img/9.png)
+
+![](img/10.png)
+
+
+
+![](img/11.png)
+
+![](img/12.png)
+
+
+![](img/13.png)
+
+
+![](img/14.png)
 
 You've successfully set up a DHCP server on a Windows Server 2022 Domain Controller. This setup allows your network to automatically assign IP addresses, simplifying network management.
