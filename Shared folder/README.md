@@ -1,4 +1,4 @@
-# Shared Folder
+# Shared Folder - SMB
 
 Sharing folders within a Windows environment is a common task in networks, especially in organizations. In this guide, we will walk through the steps to share a folder with file inside. Only users within a specific domain will have read and write access to this folder and file.
 
